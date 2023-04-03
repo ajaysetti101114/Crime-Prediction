@@ -19,10 +19,6 @@ app = Flask(__name__)
 def root():
     return render_template('index.html')
 
-# @app.route('/images/<Paasbaan>')
-# def download_file(Paasbaan):
-#     return send_from_directory(app.config['images'], Paasbaan)
-
 @app.route('/index.html')
 def index():
     return render_template('index.html')
@@ -31,13 +27,6 @@ def index():
 def work():
     return render_template('work.html')
 
-# @app.route('/about.html')
-# def about():
-#     return render_template('about.html')
-
-# @app.route('/contact.html')
-# def contact():
-#     return render_template('contact.html')
 
 @app.route('/result.html', methods = ['POST'])
 def predict():
