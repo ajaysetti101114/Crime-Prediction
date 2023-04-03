@@ -31,9 +31,9 @@ def index():
 def work():
     return render_template('work.html')
 
-@app.route('/about.html')
-def about():
-    return render_template('about.html')
+# @app.route('/about.html')
+# def about():
+#     return render_template('about.html')
 
 # @app.route('/contact.html')
 # def contact():
